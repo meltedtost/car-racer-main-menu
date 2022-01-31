@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Speed Racer</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"> </script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+
+    <!-- Firebase SDK CODE ADD BELOW -->
+
+    <script>
+      const firebaseConfig = {
+  apiKey: "AIzaSyBm1jmjf82PKPxlsy9OeZYFn2YIk4O92nA",
+  authDomain: "multi-car-747d8.firebaseapp.com",
+  databaseURL: "https://multi-car-747d8-default-rtdb.firebaseio.com",
+  projectId: "multi-car-747d8",
+  storageBucket: "multi-car-747d8.appspot.com",
+  messagingSenderId: "75365082149",
+  appId: "1:75365082149:web:df820cbc9290dccab48bcc"
+};
+
+// Initialize Firebase
+const app = firebase.initializeApp(firebaseConfig);
+    </script>
+
+   
+  </head>
+  <body>
+    
+    <script src="./sketch.js"></script>
+  </body>
+</html>
